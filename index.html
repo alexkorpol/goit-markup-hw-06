@@ -397,20 +397,40 @@
       <form action="">
         <div class="modal-input-group">
           <label for="name">Імʼя</label>
-          <input type="text" class="modal-input" name="name" id="name" required>
+          <div class="modal-input-wrapper">
+            <input type="text" class="modal-input" name="name" id="name" required>
+            <svg class="modal-input-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
         </div>
         <div class="modal-input-group"><label for="tel">Телефон</label>
-          <input type="tel" id="tel" class="modal-input" name="tel" required>
+          <div class="modal-input-wrapper">
+            <input type="tel" id="tel" class="modal-input" name="tel" required>
+            <svg class="modal-input-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
         </div>
-        <div class="modal-input-group"><label for="email">Пошта</label>
-          <input type="email" id="email" name="email" class="modal-input" required>
+        <div class="modal-input-group">
+          <label for="email">Пошта</label>
+          <div class="modal-input-wrapper">
+            <div class="modal-input-wrapper"></div>
+            <input type="email" id="email" name="email" class="modal-input" required>
+            <svg class="modal-input-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
         </div>
-        <div class="modal-input-group"><label for="comment">Коментар</label>
+        <div class="modal-input-group">
+          <label for="comment">Коментар</label>
+          <div class="modal-input-wrapper"></div>
           <textarea name="comment" id="comment" class="modal-text" placeholder="Введіть текст"></textarea>
         </div>
-        <div>
-          <p class="paragraf-modal">Погоджуюся з розсилкою та приймаю <a class="link-modal" href="">Умови договору</a>
-          </p>
+        <div class="modal-input-group">
+          <input type="checkbox" name="politic" id="politic" class="modal-politic-check" visually-hidden>
+          <label for="politic" class="modal-politic-label">Погоджуюся з розсилкою та приймаю <a class="link-modal" href="">Умови договору</a>
+          </label>
         </div>
         <button type="submit" class="btn btn-padding-b">Відправити</button>
       </form>
