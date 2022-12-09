@@ -49,13 +49,13 @@
     </div>
   </header>
 
-    <main>
-      <section class="hero section">
-        <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open class="btn" type="button">Замовити послугу</button>
-        </div>
-      </section>
+  <main>
+    <section class="hero section">
+      <div class="container">
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <button data-modal-open class="btn btn-padding-a" type="button">Замовити послугу</button>
+      </div>
+    </section>
 
     <section class="advanteges-section section">
       <div class="advanteges container">
@@ -383,18 +383,39 @@
           </li>
         </ul>
       </div>
-    </footer>
-    <div data-modal class="modal-drop-section is-hidden">
-      <div class="modal-window">
-        <div class="modal-close">
-          <button data-modal-close type="button" class="btn-close">
-            <svg class="modal-icon">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+  </footer>
+  <div data-modal class="modal-drop-section is-hidden">
+    <div class="modal-window">
+      <div class="modal-close">
+        <button data-modal-close type="button" class="btn-close">
+          <svg class="modal-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
+      <p class="modal-heading">Залиште свої дані, ми вам передзвонимо</p>
+      <form action="">
+        <div class="modal-input-group">
+          <label for="name">Імʼя</label>
+          <input type="text" class="modal-input" name="name" id="name" required>
+        </div>
+        <div class="modal-input-group"><label for="tel">Телефон</label>
+          <input type="tel" id="tel" class="modal-input" name="tel" required>
+        </div>
+        <div class="modal-input-group"><label for="email">Пошта</label>
+          <input type="email" id="email" name="email" class="modal-input" required>
+        </div>
+        <div class="modal-input-group"><label for="comment">Коментар</label>
+          <textarea name="comment" id="comment" class="modal-text" placeholder="Введіть текст"></textarea>
+        </div>
+        <div>
+          <p class="paragraf-modal">Погоджуюся з розсилкою та приймаю <a class="link-modal" href="">Умови договору</a>
+          </p>
+        </div>
+        <button type="submit" class="btn btn-padding-b">Відправити</button>
+      </form>
     </div>
+  </div>
   </div>
   <script src="./js/modal.js"></script>
 </body>
