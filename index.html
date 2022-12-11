@@ -383,6 +383,18 @@
           </li>
         </ul>
       </div>
+      <div class="subscribe-wrapper">
+        <h3 class="subscribe-wrapper-tittle join-tittle">підпишіться на розсилку</h3>
+        <form>
+          <label>
+              <input class="footer-subscribe" type="email" placeholder="E-mail" name="foter-subscribe">
+          </label>
+          <button type="submit" class="btn-subscribe">Підписатися
+              <svg class="subscribe-icon"><use href="./images/icons.svg#icon-send"></use></svg>
+          </button>
+      </form>
+
+      </div>
   </footer>
   <div data-modal class="modal-drop-section is-hidden">
     <div class="modal-window">
@@ -426,11 +438,17 @@
           <label for="comment">Коментар</label>
           <div class="modal-input-wrapper"></div>
           <textarea name="comment" id="comment" class="modal-text" placeholder="Введіть текст"></textarea>
-        </div>
+        </div>        
         <div class="modal-input-group">
-          <input type="checkbox" name="politic" id="politic" class="modal-politic-check" visually-hidden>
-          <label for="politic" class="modal-politic-label">Погоджуюся з розсилкою та приймаю <a class="link-modal" href="">Умови договору</a>
-          </label>
+          <input type="checkbox" name="politic" id="politic" class="modal-politic-check visually-hidden">
+          <label for="politic" class="modal-politic-label">
+            <!-- <span class="modal-politic-check2">
+            <svg  width="11" height="8">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+          </span> -->
+          Погоджуюся з розсилкою та приймаю <a class="link-modal" href="">Умови договору</a>         
+          </label>          
         </div>
         <button type="submit" class="btn btn-padding-b">Відправити</button>
       </form>
