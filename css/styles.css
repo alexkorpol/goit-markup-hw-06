@@ -704,16 +704,10 @@ ol {
   line-height: 1.88;
 }
 .modal-drop-section {
-  /* top: 50%;
+  top: 50%;
   left: 50%;
-  transform: transition (-50%, -50%); */
+  transform: translate(-50%, -50%);
   position: fixed;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  top: 0;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition-property: visibility, opacity;
@@ -733,16 +727,13 @@ ol {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 0px 40px 40px 40px;
-  /* padding-left: 40px;
-  padding-right: 40px; */
+  padding: 40px;
 }
+
 .modal-close {
   position: absolute;
-  margin-top: 8px;
-  margin-right: 8px;
-  position: absolute;
-  right: 0;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
 }
@@ -771,23 +762,13 @@ ol {
   fill: currentColor;
 }
 .modal-heading {
-  /* display: flex;
-  position: relative;
-  left: 0; */
-  padding-top: 43px;
   padding-bottom: 12px;
-  /* text-align: center; */
-  /* align-items: center; */
-  /* margin-top: 40px; */
-  /* width: 448px; */
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--first-color);
 }
 .modal-form-window {
   width: 528px;
@@ -797,16 +778,16 @@ ol {
   margin-bottom: 10px;
 }
 
+.modal-input-group-comment {
+  margin-bottom: 20px;
+}
+
 .modal-input-group label {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--gray-color);
   display: block;
-  /* padding-bottom: 4px; */
   margin-bottom: 4px;
 }
 
@@ -847,6 +828,7 @@ ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text {
+  display: block;
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -861,37 +843,13 @@ ol {
 }
 
 label.modal-politic-label {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-top: 10px;
   margin-bottom: 30px;
   display: flex;
   align-items: center;
 }
-/* Var #1 for change check-box */
-
-/* .modal-politic-label::before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  border: 2px solid #212121;
-  border-radius: 2px;
-  margin-left: 14px;
-  margin-right: 7px;
-}
-
-.modal-politic-check:checked + label::before {
-  border: none;
-  background-repeat: no-repeat;
-  background-image: url(../images/check.svg);
-  background-position: center;
-  background-color: var(--accent-color);
-} */
-/* Var # 2 for change check-box*/
 
 .modal-politic-check2 {
   width: 16px;
